@@ -1,6 +1,6 @@
 <?php
-     $login = 'root';
-     $pass = '';
-     $host = 'localhost';
-     $name = 'r2d2_nov';
+     const LOGIN = 'root';
+     const PASS = '';
+     const HOST = 'localhost';
+     const NAME = 'r2d2_nov';
 
