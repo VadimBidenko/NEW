@@ -2,14 +2,8 @@
 
 class Model {
 
-    private $host = 'localhost';
-    private $username = 'root';
-    private $passwd = '';
-    private $dbname = 'r2d2_nov';
-    private $db;
-
     public function __construct() {
-	$this->db = new mysqli($this->host, $this->username, $this->passwd, $this->dbname);
+	$this->db = new mysqli($this->HOST, $this->LOGIN, $this->PASS, $this->NAME);
     }
 
     public function getTasks() {
