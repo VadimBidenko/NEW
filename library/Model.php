@@ -3,10 +3,10 @@
 class Model {
 
     public function __construct() {
-	$this->db = new mysqli($this->HOST, $this->LOGIN, $this->PASS, $this->NAME);
+	$this->db = new mysqli(HOST, LOGIN, PASS, NAME);
     }
 
-    public function getTasks() {
+    public function getData() {
 	if ($this->db->connect_errno === 0) {
 	    $query = 'select * from tasks';
 	    $res = $this->db->query($query);
